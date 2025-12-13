@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    <title>User Registration Form</title>
+</head>
+
+<body>
+    <h1><u>User Registration form</u></h1>
+    <form action="submitForm.html" method="get">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="name" required>
+        </div>
+        <div>
+            <label for="regNo">Reg. No.:</label>
+            <input type="text" id="regNo" name="regNo" placeholder="registration number" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="password" required>
+        </div>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="Date" id="dob" name="dob" placeholder="" required>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="age" required min="18" max="100">
+        </div>
+        <div>
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" placeholder="email" required>
+        </div>
+        <div>
+            <label for="mobno">Phone No.:</label>
+            <input type="tel" id="mobno" name="mobno" placeholder="phone number">
+        </div>
+        <h3><u>GENDER</u></h3>
+        <div>
+            <input type="radio" name="gender" id="male" value="Male" required>
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="female" value="Female" required>
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <input type="radio" name="gender" id="transgender" value="Transgender" required>
+            <label for="transgender">Transgender</label>
+        </div>
+
+        <h3><u>ABOUT YOURSELF</u></h3>
+        <div>
+            <label for="about">About</label>
+            <textarea name = "about" id = "about" cols = "20" rows = "10"></textarea> 
+        </div>
+        
+        <h3><u>STATE NAME</u></h3>
+        <div>
+            <select name="state" id="state">
+                <option value="TN">Tamil Nadu</option>
+                <option value="KL">Bihar</option>
+                <option value="AP">Andhra Pradesh</option>
+                <option value="KN">Gujarat</option>
+            </select>
+        </div>
+        <h4><u>ADDRESS</u></h4>
+        <div>
+            <label for="address">Full Address</label>
+            <textarea name="address" id="address" rows="3"></textarea>
+        </div>
+        <div>
+            <label for="city">City</label>
+            <input type="text" id="city" name="city">
+        </div>
+        <div>
+            <label for="pincode">Pincode</label>
+            <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}">
+        </div>
+        <div>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Russia">Russia</option>
+                <option value="UK">UK</option>
+            </select>
+        </div>
+
+        <br>
+        <h3><u>SKILLS</u></h3>
+        <div>   
+            <input type="checkbox" id="skills" name="skills" value="HTML">
+            <label for="skills">HTML</label>
+        </div>
+        <div>   
+            <input type="checkbox" id="skills" name="skills" value="CSS">
+            <label for="skills">CSS</label>
+        </div>
+        <div>   
+            <input type="checkbox" id="skills" name="skills" value="C++">
+            <label for="skills">CSS</label>
+        </div>
+        <div>   
+            <input type="checkbox" id="skills" name="skills" value="JAVASCRIPT">
+            <label for="skills">JAVASCRIPT</label>
+        </div>
+        <br>
+        <h3><u>FOR COMMUNICATION</u></h3>
+        <div>   
+            <input type="checkbox" id="emailalert" name="emailalert" value="E-mail Alert">
+            <label for="emailalert">E-mail Alert</label>
+        </div>
+        <div>   
+            <input type="checkbox" id="smsalert" name="smsalert" value="SMS Alert">
+            <label for="smsalert">SMS Alert</label>
+        </div>
+        <br>
+        <div>
+            <label  for="file">Resume</label>
+            <input type="file" id="file" name="file" required>
+        </div>
+        <div>
+            <label for="img">Upload Image</label>
+            <input type="file" accept = "image/*" id="img" name="img">
+        </div>
+        <br>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="Reset">Reset</button>
+        </div>
+    </form>
+     <a href="index.html">HOME PAGE</a>
+</body>
+
+</html>
